@@ -12,9 +12,16 @@ export default defineConfig(({ mode }) => {
       port: Number(env.PORT) || 3000,
 
       // 🔥 Thêm proxy để chuyển /api → http://localhost:5000
+      // proxy: {
+      //   "/api": {
+      //     target: "http://localhost:5000", // backend Node.js
+      //     changeOrigin: true,
+      //     secure: false,
+      //   },
+      // },
       proxy: {
         "/api": {
-          target: "http://localhost:5000", // backend Node.js
+          target: "http://localhost:3000", // json-server của bạn
           changeOrigin: true,
           secure: false,
         },
