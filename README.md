@@ -18,8 +18,8 @@ Dự án này cung cấp một mẫu ứng dụng thương mại điện tử v�
 Clone repository:
 
 ```bash
-git clone https://github.com/devvd25/thuongmaidientu.git
-cd thuongmaidientu
+git clone https://github.com/luongchibao/WebsiteBanDienThoai
+cd WebsiteBanDienThoai
 npm install
 npm run dev
 npm run server
